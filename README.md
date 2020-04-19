@@ -1,19 +1,19 @@
 # clean-code-javascript
 
-## Table of Contents
+## Содержание
 
-- [ ] 1. [Introduction](#introduction)
-- [ ] 2. [Variables](#variables)
-- [ ] 3. [Functions](#functions)
-- [ ] 4. [Objects and Data Structures](#objects-and-data-structures)
-- [ ] 5. [Classes](#classes)
+- [ ] 1. [Введение](#introduction)
+- [ ] 2. [Переменные](#variables)
+- [ ] 3. [Функции](#functions)
+- [ ] 4. [Объекты и структуры данных](#objects-and-data-structures)
+- [ ] 5. [Классы](#classes)
 - [ ] 6. [SOLID](#solid)
-- [ ] 7. [Testing](#testing)
-- [ ] 8. [Concurrency](#concurrency)
-- [ ] 9. [Error Handling](#error-handling)
-- [ ] 10. [Formatting](#formatting)
-- [ ] 11. [Comments](#comments)
-- [ ] 12. [Translation](#translation)
+- [ ] 7. [Тестирование](#testing)
+- [ ] 8. [Асинхронность](#concurrency)
+- [ ] 9. [Обработка ошибок](#error-handling)
+- [ ] 10. [Форматирование](#formatting)
+- [ ] 11. [Комментарии](#comments)
+- [ ] 12. [Перевод](#translation)
 
 ## Introduction
 
@@ -59,7 +59,7 @@ const yyyymmdstr = moment().format("YYYY/MM/DD");
 const currentDate = moment().format("YYYY/MM/DD");
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Use the same vocabulary for the same type of variable
 
@@ -77,7 +77,7 @@ getCustomerRecord();
 getUser();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Use searchable names
 
@@ -105,7 +105,7 @@ const MILLISECONDS_IN_A_DAY = 86_400_000;
 setTimeout(blastOff, MILLISECONDS_IN_A_DAY);
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Use explanatory variables
 
@@ -129,7 +129,7 @@ const [_, city, zipCode] = address.match(cityZipCodeRegex) || [];
 saveCityZipCode(city, zipCode);
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Avoid Mental Mapping
 
@@ -164,7 +164,7 @@ locations.forEach(location => {
 });
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Don't add unneeded context
 
@@ -199,7 +199,7 @@ function paintCar(car) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Use default arguments instead of short circuiting or conditionals
 
@@ -225,7 +225,7 @@ function createMicrobrewery(name = "Hipster Brew Co.") {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ## **Functions**
 
@@ -285,7 +285,7 @@ createMenu({
 });
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Functions should do one thing
 
@@ -321,7 +321,7 @@ function isActiveClient(client) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Function names should say what they do
 
@@ -349,7 +349,7 @@ const date = new Date();
 addMonthToDate(1, date);
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Functions should only be one level of abstraction
 
@@ -421,7 +421,7 @@ function parse(tokens) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Remove duplicate code
 
@@ -507,7 +507,7 @@ function showEmployeeList(employees) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Set default objects with Object.assign
 
@@ -560,7 +560,7 @@ function createMenu(config) {
 createMenu(menuConfig);
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Don't use flags as function parameters
 
@@ -590,7 +590,7 @@ function createTempFile(name) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Avoid Side Effects (part 1)
 
@@ -639,7 +639,7 @@ console.log(name); // 'Ryan McDermott';
 console.log(newName); // ['Ryan', 'McDermott'];
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Avoid Side Effects (part 2)
 
@@ -692,7 +692,7 @@ const addItemToCart = (cart, item) => {
 };
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Don't write to global functions
 
@@ -726,7 +726,7 @@ class SuperArray extends Array {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Favor functional programming over imperative programming
 
@@ -791,7 +791,7 @@ const totalOutput = programmerOutput.reduce(
 );
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Encapsulate conditionals
 
@@ -815,7 +815,7 @@ if (shouldShowSpinner(fsmInstance, listNodeInstance)) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Avoid negative conditionals
 
@@ -843,7 +843,7 @@ if (isDOMNodePresent(node)) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Avoid conditionals
 
@@ -903,7 +903,7 @@ class Cessna extends Airplane {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Avoid type-checking (part 1)
 
@@ -932,7 +932,7 @@ function travelToTexas(vehicle) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Avoid type-checking (part 2)
 
@@ -969,7 +969,7 @@ function combine(val1, val2) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Don't over-optimize
 
@@ -997,7 +997,7 @@ for (let i = 0; i < list.length; i++) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Remove dead code
 
@@ -1031,7 +1031,7 @@ const req = newRequestModule;
 inventoryTracker("apples", req, "www.inventory-awesome.io");
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ## **Objects and Data Structures**
 
@@ -1094,7 +1094,7 @@ const account = makeBankAccount();
 account.setBalance(100);
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Make objects have private members
 
@@ -1134,7 +1134,7 @@ delete employee.name;
 console.log(`Employee name: ${employee.getName()}`); // Employee name: John Doe
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ## **Classes**
 
@@ -1221,7 +1221,7 @@ class Human extends Mammal {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Use method chaining
 
@@ -1301,7 +1301,7 @@ class Car {
 const car = new Car("Ford", "F-150", "red").setColor("pink").save();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Prefer composition over inheritance
 
@@ -1371,7 +1371,7 @@ class Employee {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ## **SOLID**
 
@@ -1433,7 +1433,7 @@ class UserSettings {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Open/Closed Principle (OCP)
 
@@ -1524,7 +1524,7 @@ class HttpRequester {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Liskov Substitution Principle (LSP)
 
@@ -1643,7 +1643,7 @@ const shapes = [new Rectangle(4, 5), new Rectangle(4, 5), new Square(5)];
 renderLargeShapes(shapes);
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Interface Segregation Principle (ISP)
 
@@ -1721,7 +1721,7 @@ const $ = new DOMTraverser({
 });
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Dependency Inversion Principle (DIP)
 
@@ -1824,7 +1824,7 @@ const inventoryTracker = new InventoryTracker(
 inventoryTracker.requestItems();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ## **Testing**
 
@@ -1895,7 +1895,7 @@ describe("MomentJS", () => {
 });
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ## **Concurrency**
 
@@ -1946,7 +1946,7 @@ get("https://en.wikipedia.org/wiki/Robert_Cecil_Martin")
   });
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Async/Await are even cleaner than Promises
 
@@ -1995,7 +1995,7 @@ async function getCleanCodeArticle() {
 getCleanCodeArticle()
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ## **Error Handling**
 
@@ -2074,7 +2074,7 @@ getdata()
   });
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ## **Formatting**
 
@@ -2125,7 +2125,7 @@ class Animal {}
 class Alpaca {}
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Function callers and callees should be close
 
@@ -2213,7 +2213,7 @@ const review = new PerformanceReview(employee);
 review.perfReview();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ## **Comments**
 
@@ -2260,7 +2260,7 @@ function hashIt(data) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Don't leave commented out code in your codebase
 
@@ -2281,7 +2281,7 @@ doStuff();
 doStuff();
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Don't have journal comments
 
@@ -2310,7 +2310,7 @@ function combine(a, b) {
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ### Avoid positional markers
 
@@ -2349,7 +2349,7 @@ const actions = function() {
 };
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
 
 ## Translation
 
@@ -2378,4 +2378,4 @@ This is also available in other languages:
 - ![ua](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Ukraine.png) **Ukrainian**: [mindfr1k/clean-code-javascript-ua](https://github.com/mindfr1k/clean-code-javascript-ua)
 - ![vi](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png) **Vietnamese**: [hienvd/clean-code-javascript/](https://github.com/hienvd/clean-code-javascript/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ к началу](#содержание)**
