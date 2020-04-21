@@ -2,7 +2,7 @@
 
 ## Содержание
 
-- [ ] 1. [Введение](#introduction)
+- [x] 1. [Введение](#введение)
 - [ ] 2. [Переменные](#variables)
 - [ ] 3. [Функции](#functions)
 - [ ] 4. [Объекты и структуры данных](#objects-and-data-structures)
@@ -15,33 +15,34 @@
 - [ ] 11. [Комментарии](#comments)
 - [ ] 12. [Перевод](#translation)
 
-## Introduction
+## Введение
 
-![Humorous image of software quality estimation as a count of how many expletives
-you shout when reading code](https://www.osnews.com/images/comics/wtfm.jpg)
+![Юмористическое изображение оценки качества программного обеспечения:
+в качестве единицы измерения используется количество ругательства,
+выкрикиваемых во время чтения кода](https://www.osnews.com/images/comics/wtfm.jpg)
 
-Software engineering principles, from Robert C. Martin's book
+Инженерные принципы программного обеспечения, из книги Роберта С. Мартина
 [_Clean Code_](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882),
-adapted for JavaScript. This is not a style guide. It's a guide to producing
-[readable, reusable, and refactorable](https://github.com/ryanmcdermott/3rs-of-software-architecture) software in JavaScript.
+приспособленные для JavaScript. Это не стайл гайд. Это руководство по написанию
+[читаемого, переиспользуемого и поддерживаемого](https://github.com/ryanmcdermott/3rs-of-software-architecture) кода на JavaScript.
 
-Not every principle herein has to be strictly followed, and even fewer will be
-universally agreed upon. These are guidelines and nothing more, but they are
-ones codified over many years of collective experience by the authors of
+Не каждый принцип здесь должен строго соблюдаться. Еще хуже, если все будут
+с ними согласны. Это рекомендации и ничего больше, но они
+сформированы в течение многих лет из коллективного опыта авторов
 _Clean Code_.
 
-Our craft of software engineering is just a bit over 50 years old, and we are
-still learning a lot. When software architecture is as old as architecture
-itself, maybe then we will have harder rules to follow. For now, let these
-guidelines serve as a touchstone by which to assess the quality of the
-JavaScript code that you and your team produce.
+Индустрии разработки программного обеспечения чуть больше 50 лет, и мы
+все ещё много чему учимся. Возможно, когда архитектура программного обеспечения станет стара как классическая
+архитектура, у нас появятся более жесткие правила, которым необходимо будет следовать. А пока, пусть эти
+принципы и рекомендации служат критериями, с помощью которых можно оценить качество
+кода на JavaScript, который вы и ваша команда создаете.
 
-One more thing: knowing these won't immediately make you a better software
-developer, and working with them for many years doesn't mean you won't make
-mistakes. Every piece of code starts as a first draft, like wet clay getting
-shaped into its final form. Finally, we chisel away the imperfections when
-we review it with our peers. Don't beat yourself up for first drafts that need
-improvement. Beat up the code instead!
+One more thing: знание этих принципов не сделает вас сразу же лучшим разработчиком программного
+обеспечения, а следование этим принципам много лет не значит, что вы не будете делать
+ошибки. Каждый фрагмент кода начинается как набросок. Он, как мокрая глина,
+принимает свою финальную форму постепенно. Мы исправляем его недостатки, когда
+просматриваем написанный код со своими коллегами. Не корите себя за первые строки кода, которые нуждаются
+в доработках. Лучше потратьте это время на его улучшение!
 
 ## **Variables**
 
